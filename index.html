@@ -14,6 +14,8 @@
         <a href="#home" class="hover:text-blue-700">Home</a>
         <a href="#about" class="hover:text-blue-700">About</a>
         <a href="#skills" class="hover:text-blue-700">Skills</a>
+        <a href="#projects" class="hover:text-blue-700">Projects</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
       </div>
     </nav>
   </header>
@@ -43,6 +45,57 @@
         <span class="rounded bg-white px-4 py-2 shadow-sm">C++</span>
         <span class="rounded bg-white px-4 py-2 shadow-sm">Git</span>
         <span class="rounded bg-white px-4 py-2 shadow-sm">GitHub</span>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-white">
+      <div class="mx-auto max-w-5xl px-5 py-16">
+        <h2 class="text-3xl font-bold text-gray-900">Projects</h2>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" class="filter-button rounded border border-blue-700 bg-blue-700 px-4 py-2 text-white" data-filter="all">All</button>
+          <button type="button" class="filter-button rounded border border-gray-300 bg-white px-4 py-2" data-filter="web">Web Development</button>
+          <button type="button" class="filter-button rounded border border-gray-300 bg-white px-4 py-2" data-filter="javascript">JavaScript</button>
+          <button type="button" class="filter-button rounded border border-gray-300 bg-white px-4 py-2" data-filter="cpp">C/C++</button>
+        </div>
+
+        <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="web">
+            <p class="text-sm text-blue-700">Web Development</p>
+            <h3 class="mt-2 text-xl font-bold">Personal Portfolio Website</h3>
+            <p class="mt-3 text-gray-600">A responsive personal portfolio website built using HTML, Tailwind CSS and JavaScript.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="javascript">
+            <p class="text-sm text-blue-700">JavaScript</p>
+            <h3 class="mt-2 text-xl font-bold">To-Do List</h3>
+            <p class="mt-3 text-gray-600">A simple task management application using JavaScript.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="javascript">
+            <p class="text-sm text-blue-700">JavaScript</p>
+            <h3 class="mt-2 text-xl font-bold">Student Attendance Dashboard</h3>
+            <p class="mt-3 text-gray-600">A simple dashboard for displaying and filtering student attendance records.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="javascript">
+            <p class="text-sm text-blue-700">JavaScript</p>
+            <h3 class="mt-2 text-xl font-bold">Library Book Catalog</h3>
+            <p class="mt-3 text-gray-600">A simple website for displaying, searching and filtering books.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="cpp">
+            <p class="text-sm text-blue-700">C/C++</p>
+            <h3 class="mt-2 text-xl font-bold">Student Management System</h3>
+            <p class="mt-3 text-gray-600">A basic programming project for managing student information.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+          <article class="project-card rounded border border-gray-200 bg-gray-50 p-5" data-category="cpp">
+            <p class="text-sm text-blue-700">C/C++</p>
+            <h3 class="mt-2 text-xl font-bold">Simple Calculator</h3>
+            <p class="mt-3 text-gray-600">A basic calculator project demonstrating programming fundamentals.</p>
+            <a href="https://github.com/" class="mt-4 inline-block text-blue-700">GitHub link</a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
