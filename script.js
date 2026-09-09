@@ -1,3 +1,11 @@
+// Mobile Menu
+var menuButton = document.getElementById("menu-button");
+var navLinks = document.getElementById("nav-links");
+
+menuButton.addEventListener("click", function () {
+  navLinks.classList.toggle("hidden");
+});
+
 // Project Filtering
 var filterButtons = document.querySelectorAll(".filter-button");
 var projectCards = document.querySelectorAll(".project-card");
