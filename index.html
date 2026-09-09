@@ -98,6 +98,30 @@
         </div>
       </div>
     </section>
+
+    <section id="contact" class="mx-auto max-w-5xl px-5 py-16">
+      <h2 class="text-3xl font-bold text-gray-900">Contact Me</h2>
+      <form id="contact-form" class="mt-6 max-w-xl">
+        <label for="name" class="block font-medium">Name</label>
+        <input id="name" type="text" class="mt-2 w-full rounded border border-gray-300 bg-white px-3 py-2">
+        <p id="name-error" class="mt-1 text-sm text-red-600"></p>
+
+        <label for="email" class="mt-4 block font-medium">Email</label>
+        <input id="email" type="email" class="mt-2 w-full rounded border border-gray-300 bg-white px-3 py-2">
+        <p id="email-error" class="mt-1 text-sm text-red-600"></p>
+
+        <label for="subject" class="mt-4 block font-medium">Subject</label>
+        <input id="subject" type="text" class="mt-2 w-full rounded border border-gray-300 bg-white px-3 py-2">
+        <p id="subject-error" class="mt-1 text-sm text-red-600"></p>
+
+        <label for="message" class="mt-4 block font-medium">Message</label>
+        <textarea id="message" rows="5" class="mt-2 w-full rounded border border-gray-300 bg-white px-3 py-2"></textarea>
+        <p id="message-error" class="mt-1 text-sm text-red-600"></p>
+
+        <button type="submit" class="mt-5 rounded bg-blue-700 px-5 py-2 text-white">Submit</button>
+        <p id="success-message" class="mt-3 text-green-700"></p>
+      </form>
+    </section>
   </main>
 
   <footer class="bg-gray-800 px-5 py-6 text-center text-white">
