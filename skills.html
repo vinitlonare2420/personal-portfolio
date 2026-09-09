@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Vinit Lonare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-sm">
+    <nav class="relative mx-auto flex max-w-5xl items-center justify-between px-5 py-4" aria-label="Main navigation">
+      <a href="index.html" class="text-xl font-bold text-blue-700">Vinit Lonare</a>
+      <button id="menu-button" type="button" class="rounded border border-gray-300 px-3 py-2 text-sm md:hidden" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div id="nav-links" class="hidden absolute left-0 top-16 z-10 w-full bg-white px-5 py-4 shadow-sm md:static md:block md:w-auto md:p-0 md:shadow-none">
+        <div class="flex flex-col gap-4 md:flex-row md:gap-6">
+          <a href="index.html" class="hover:text-blue-700">Home</a>
+          <a href="about.html" class="hover:text-blue-700">About</a>
+          <a href="skills.html" class="hover:text-blue-700">Skills</a>
+          <a href="projects.html" class="hover:text-blue-700">Projects</a>
+          <a href="contact.html" class="hover:text-blue-700">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-1 mx-auto max-w-5xl px-5 py-16">
+    <section class="rounded bg-white p-6 shadow-sm md:p-10">
+      <h1 class="text-3xl font-bold text-gray-900">Skills</h1>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="rounded bg-gray-100 px-4 py-2">HTML5</span>
+        <span class="rounded bg-gray-100 px-4 py-2">Tailwind CSS</span>
+        <span class="rounded bg-gray-100 px-4 py-2">JavaScript</span>
+        <span class="rounded bg-gray-100 px-4 py-2">C</span>
+        <span class="rounded bg-gray-100 px-4 py-2">C++</span>
+        <span class="rounded bg-gray-100 px-4 py-2">Git</span>
+        <span class="rounded bg-gray-100 px-4 py-2">GitHub</span>
+      </div>
+      <a href="index.html" class="mt-6 inline-block rounded bg-blue-700 px-5 py-2 text-white hover:bg-blue-800">Return to main portfolio</a>
+    </section>
+  </main>
+  <footer class="bg-gray-800 px-5 py-6 text-center text-white">Vinit Lonare</footer>
+  <script src="script.js"></script>
+</body>
+</html>

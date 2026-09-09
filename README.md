@@ -1,14 +1,23 @@
 # Personal Portfolio Website
 
-This is a simple student portfolio website created for the TAE-1 project in Web Fundamentals & Basic Frontend Design.
+This is a simple responsive student portfolio website created for the TAE-1 project in Web Fundamentals & Basic Frontend Design.
+
+## Pages
+
+- `index.html` - complete multi-section portfolio
+- `about.html` - About page
+- `skills.html` - Skills page
+- `projects.html` - Projects page with filtering
+- `contact.html` - Contact page with Formspree form
 
 ## Features
 
-- Responsive navbar with a basic mobile menu
-- Home, About, Skills, Projects, Contact, and Footer sections
-- Six sample project cards
-- Project filtering by category
-- Basic contact form validation
+- Navbar links open each page in a new browser tab
+- Responsive mobile menu
+- Six real project cards with simple category filtering
+- Client-side contact form validation
+- Formspree form submission
+- Email, LinkedIn, and GitHub contact links
 
 ## Technologies Used
 
@@ -16,41 +25,20 @@ This is a simple student portfolio website created for the TAE-1 project in Web 
 - Tailwind CSS through CDN
 - Vanilla JavaScript
 
-## Project Structure
-
-```text
-portfolio/
-├── index.html
-├── script.js
-└── README.md
-```
-
 ## How to Run
 
-Open `index.html` in a browser. No npm or build process is needed. The Tailwind CDN needs an internet connection to load the styling.
+Open `index.html` in a browser. An internet connection is needed for Tailwind CSS and Formspree.
 
-## How Project Filtering Works
+## Project Filtering
 
-Each project has a `data-category` attribute. When a filter button is clicked, JavaScript loops through all project cards. It shows matching cards and adds the `hidden` class to the other cards.
+Each project has a `data-category` attribute. JavaScript reads the selected filter and loops through the project cards. Matching cards are shown and other cards receive the `hidden` class.
 
-## How Contact Validation Works
+## Contact Form
 
-JavaScript uses `preventDefault()` so the form does not reload the page. It checks the name, email, subject, and message. It also checks the email with a basic pattern. Error messages appear below invalid fields, and a success message appears when the form is valid.
+The form uses Formspree with this endpoint:
 
-## GitHub Pages Deployment
+```text
+https://formspree.io/f/myeyljla
+```
 
-1. Create a GitHub repository.
-2. Upload the three files from the `portfolio` folder.
-3. Open **Settings**, then choose **Pages**.
-4. Select **Deploy from a branch**, choose the main branch and root folder, and save.
-
-## JavaScript Concepts Used
-
-- `getElementById()`
-- `querySelectorAll()`
-- `addEventListener()`
-- `forEach()`
-- `if` and `else`
-- `classList`
-- `getAttribute()`
-- `preventDefault()`
+JavaScript checks the name, email, subject, and message before allowing the form to submit.
